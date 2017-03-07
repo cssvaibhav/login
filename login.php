@@ -19,9 +19,13 @@ class Login
 
 	public function validate($username,$password)
 	{
+		$username = htmlentities($username, ENT_QUOTES, 'UTF-8');
+		$password = htmlentities($password, ENT_QUOTES, 'UTF-8');
 		
 		$query = "SELECT * FROM $this->table WHERE $this->colUsername = '$username'";
+		
 		$ret = $this->db->query($query);
+
 		if($ret->num_rows == 1)
 		{
 			$response = $ret->fetch_assoc();
