@@ -3,8 +3,8 @@
 Helps to validate login by passing connection object,table name, username and password column name
 
 # Installation & Usage: 
-For Simple PHP Application :
-	1. Download the login folder and place it in your project root folder
+###For Simple PHP Application :
+	1. Download the login folder and place it in your project root folder.	
 	2. Include the file login.php in your project as -
 		  include_once "login/login.php";
  	3. Provide following variables to login class's constructor
@@ -19,7 +19,7 @@ For Simple PHP Application :
 		  I.  If success : Returns Array of columns corrosponding to $username and $password.
 	 	 II. If error or invalide: Returns FALSE or NULL.
 
-For CodeIgniter Application :
+###For CodeIgniter Application :
 	1. Download the login folder and paste it in the 'application/third_party' folder of your project
 	2. Include the file in your project by using constructor as 
 		include APPPATH . 'third_party/login/login.php';
